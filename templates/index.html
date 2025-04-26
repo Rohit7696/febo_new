@@ -1,0 +1,78 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci Calculator</title>
+</head>
+<body>
+    <h1>Fibonacci Calculator</h1>
+    <form method="POST">
+        <label>Enter a number:</label>
+        <input type="text" name="number" required>
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if result %}
+        <h2>Result:</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type=text] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fibonacci Calculator</h1>
+        <form method="POST">
+            <label>Enter a number:</label><br>
+            <input type="text" name="number" required><br>
+            <button type="submit">Calculate</button>
+        </form>
+
+        {% if result %}
+            <h2>Result:</h2>
+            <p>{{ result }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
